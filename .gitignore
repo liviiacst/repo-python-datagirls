@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# Configurações locais
+.env
+.vscode/
+.DS_Store
