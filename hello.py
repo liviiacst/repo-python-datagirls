@@ -25,8 +25,17 @@ import os
 
 #Dunder - 02 underlines
 
+####################
+# No linux ao digitar env no terminal você verá 
+# uma lista de todas as variáveis do ambiente, 
+# ali por exemplo está o nome do usuário em USER 
+# e a linguagem em que o sistema operacional está configurado LANG.
+
 #$env:LANG = "en_US"
 #python .\hello.py
+
+####################
+
 
 # Este programa imprime Hello World
 current_language = os.getenv("LANG")[:5]
@@ -34,8 +43,10 @@ current_language = os.getenv("LANG")[:5]
 msg = "Hello, World"
 
 if current_language == "pt_BR":
-    msg = "Olá, Mundo!"
+	msg = "Olá, Mundo!"
 elif current_language == "it_IT":
-    msg = "Ciao, Mondo!"
-
+	msg = "Ciao, Mondo!"
+elif current_language == "fr_FR":
+	msg = "Bonjour, Monde!"
+	
 print(msg)
