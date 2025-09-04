@@ -6,6 +6,7 @@ __pycache__/
 node_modules/
 
 # Configurações locais
+.venv
 .env
 .vscode/
 .DS_Store
